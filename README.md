@@ -141,6 +141,7 @@ NOTION_REPORT_DB_ID=your_notion_db_id
 
 # Run local agent
 python main.py
+```
 
 ---
 
