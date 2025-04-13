@@ -1,5 +1,4 @@
 # 📧 Gmail to Notion AI Agent
---
 
 ## 🎯 Motivation
 
@@ -88,6 +87,23 @@ The agent delivers significant productivity improvements:
 ## 🖥️ Sample Output, Deployment Proofs & Screenshots
 
 
+### ✅ Terminal Output (Local Agent Run)
+![Terminal Output](https://github.com/easycase00/AI-Agent_Gmail_Notion/blob/main/SS/Screenshot%202025-04-13%20at%205.15.24%E2%80%AFPM.png)
+
+---
+
+### ✅ AWS Lambda Execution (Cloud Deployment)
+![AWS Lambda Log Output](https://github.com/easycase00/AI-Agent_Gmail_Notion/blob/main/SS/Screenshot%202025-04-13%20at%205.58.26%E2%80%AFPM.png)
+
+---
+
+### ✅ AWS EventBridge Scheduler (CRON Trigger Setup)
+![AWS EventBridge Scheduler](https://github.com/easycase00/AI-Agent_Gmail_Notion/blob/main/SS/Screenshot%202025-04-13%20at%206.07.02%E2%80%AFPM.png)
+
+---
+
+### ✅ Notion Report Output (Daily Page Structure)
+![Notion Output](https://github.com/easycase00/AI-Agent_Gmail_Notion/blob/main/SS/Screenshot%202025-04-13%20at%206.08.52%E2%80%AFPM.png)
 
 ---
 
