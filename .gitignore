@@ -1,5 +1,19 @@
-# See .gitignore contents above
+# System files (macOS)
+.DS_Store
+._*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Secrets and local env
 .env
-credentials.json
 token.json
+credentials.json
+
+# Virtual env
+venv/
+
+# Lambda zip or deploy folders
+lambda_deploy/
 
