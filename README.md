@@ -146,7 +146,7 @@ python main.py
 ---
 
 ## 🔗 **Repository Structure**
-
+ ```
 AI-Agent_Gmail_Notion
 ├── main.py                 # Entry-point script
 ├── gmail_utils.py          # Gmail API interaction
@@ -155,3 +155,4 @@ AI-Agent_Gmail_Notion
 ├── requirements.txt        # Python package dependencies
 ├── .env                    # Environment Variables (secured)
 └── assets                  # Screenshots and proof images
+```
