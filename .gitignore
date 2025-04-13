@@ -1,0 +1,5 @@
+# See .gitignore contents above
+.env
+credentials.json
+token.json
+
