@@ -21,35 +21,45 @@ This agent seamlessly connects **Gmail**, **Groq’s state-of-the-art LLaMA 3.3 
 
 ---
 
-## 🛠️ Technical Architecture
+## 🚀 Technical Highlights
 
-The system integrates the following key components:
+- **Automated NLP Pipeline** for context-aware email summarization and task extraction.
+- **Serverless Deployment** leveraging AWS Lambda for scalability, cost efficiency, and zero downtime.
+- **Intelligent Job Application Tracking** using advanced prompt engineering and Groq’s LLaMA model.
+- **Robust Scheduling** with AWS EventBridge for dependable daily execution.
 
-### 1. **Gmail API (Google Cloud)**
-- OAuth 2.0 authentication.
-- Daily retrieval of emails.
-- Extraction of email metadata and content parsing via Google APIs and base64 encoding.
+---
 
-### 2. **Natural Language Processing with Groq**
-- Leveraged GroqCloud’s powerful LLaMA 3.3 (70B Versatile) language model.
-- Summarizes emails and classifies actionable insights using prompt engineering.
-- Extracts specific structured details (summary, TODOs, job applications).
+## 🛠️ Detailed Technical Architecture
 
-### 3. **Notion Integration**
-- Utilizes Notion's powerful API to dynamically generate structured and interactive daily reports.
-- Clearly structured reports include:
-  - Concise summaries of essential emails.
-  - Interactive checkboxes for TODOs.
-  - Structured tables for job applications, statuses, and follow-ups.
+### 1. 📥 Gmail API & OAuth 2.0
 
-### 4. **AWS Lambda (Serverless Deployment)**
-- Serverless deployment for maximum scalability and cost efficiency.
-- Robust environment variables handling for secure credentials.
-- Zero management infrastructure—automatic scaling and reliability.
+- **Authenticated OAuth 2.0** flow for secure, automated daily email retrieval.
+- **JSON-based API** calls parse and extract structured email metadata and content.
+- **Python-based email parsing** leveraging Google Cloud client libraries.
 
-### 5. **Amazon EventBridge (Automated Scheduling)**
-- Event-driven serverless architecture for daily invocation at precisely 7:00 PM.
-- Automated, reliable, and maintenance-free execution pipeline.
+### 2. 🤖 NLP & Summarization *(GroqCloud LLaMA 3.3 - 70B)*
+
+- **Prompt-engineered, context-sensitive summarization** using Groq’s highly performant LLaMA 3.3 model.
+- Structured **JSON output** for summaries, task extraction, and intelligent job-related metadata identification:
+  - **Importance Scoring**: Binary classification (important/not important).
+  - **Actionable TODO Extraction**: NLP-driven identification of tasks, urgency, and due dates.
+  - **Job Application Tracking**: Extracts and classifies roles, companies, application stages *(applied/interview/offer)*, and follow-up actions.
+
+### 3. 📑 Dynamic Notion Integration
+
+- Uses the **Notion REST API** to programmatically create richly formatted daily logs.
+- Dynamically generates:
+  - **Interactive TODO lists** (checkable items).
+  - **Structured Job Application Tracking Tables** *(company, role, status, follow-up actions)*.
+  - **Rich Text Summaries** for rapid review of daily professional communications.
+
+### 4. ☁️ Cloud-Native Infrastructure *(AWS)*
+
+- **AWS Lambda**: Event-driven, stateless function deployment, ensuring scalability and reliability.
+- **Amazon EventBridge**: Configured with **CRON expressions** to invoke daily processing precisely at 7:00 PM, completely removing manual overhead.
+
+
 
 ---
 
