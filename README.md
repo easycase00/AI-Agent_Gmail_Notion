@@ -1,5 +1,7 @@
 # 📧 Gmail to Notion AI Agent
 
+![image](https://github.com/easycase00/AI-Agent_Gmail_Notion/blob/main/SS/ChatGPT%20Image%20Apr%2013%2C%202025%2C%2011_12_48%20PM.png)
+
 ## 🎯 Motivation
 
 As a data-driven individual in a fast-paced, information-dense world, I found myself constantly overwhelmed by the volume and variability of emails hitting my inbox—especially while actively job hunting and coordinating multiple threads of professional communication. Manually parsing through emails, identifying action items, and tracking job applications became not only tedious but error-prone.
